@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card{
+    /* background-color: red; */
+    width: 250px;
+    /* height: 300px; */
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+    
+}
+.card button{
+    padding: 2px 5px;
+}
+.card-text{
+    display: flex;
+    gap: 10px;
+}
+
+
+.choose{
+    color: red;
+    font-size: 15px;
+    display: inline-block;
+    animation: shake 0.5s ease-in;
+    display: none;
+    
+}
+.added{
+    color: green;
+    display: none;
+    opacity: 1;
+    animation: fade 2s linear forwards;
+}
+/* .elementToFadeInAndOut {
+    opacity: 1;
+    animation: fade 2s linear;
+} */
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+      }
+      25% {
+        opacity: 1;
+      }
+      75% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+.move{
+    display: inline-block;
+}
+.selected{
+    background-color: blue;
+    color: white;
+}
+
+@keyframes shake {
+    0%{
+        transform: translateX(10px);
+    }
+    25%{
+        transform: translateX(-10px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    75%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(10px);
+
+    }
+    
+}
